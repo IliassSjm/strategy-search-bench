@@ -1,0 +1,53 @@
+{
+  "run_id": "random_gbm_s2",
+  "operator": "random",
+  "world": "gbm",
+  "seed": 2,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 19,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 970.6,
+  "champion": {
+    "tree": {
+      "type": "wsum",
+      "children": [
+        {
+          "type": "momentum",
+          "children": []
+        },
+        {
+          "type": "switch_z",
+          "children": [
+            {
+              "type": "breakout",
+              "children": []
+            },
+            {
+              "type": "vol_gate",
+              "children": [
+                {
+                  "type": "const_long",
+                  "children": []
+                },
+                {
+                  "type": "const_long",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "desc": "wsum(momentum, switch_z(breakout, vol_gate(const_long, const_long)))",
+    "cv_fitness": 1.0490343043393635,
+    "refit_train_sharpe": 1.4755862739317764,
+    "holdout_sharpe": -0.3889486898783427,
+    "buyhold_holdout_sharpe": -0.24100438336485733
+  }
+}

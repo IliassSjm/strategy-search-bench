@@ -1,0 +1,35 @@
+{
+  "run_id": "gp_ar1_s2",
+  "operator": "gp",
+  "world": "ar1",
+  "seed": 2,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 19,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 512.9,
+  "champion": {
+    "tree": {
+      "type": "wsum",
+      "children": [
+        {
+          "type": "const_long",
+          "children": []
+        },
+        {
+          "type": "const_long",
+          "children": []
+        }
+      ]
+    },
+    "desc": "wsum(const_long, const_long)",
+    "cv_fitness": 0.9946278633731367,
+    "refit_train_sharpe": 0.7902835434381386,
+    "holdout_sharpe": 0.25736812904367556,
+    "buyhold_holdout_sharpe": -0.25736812904367556
+  }
+}

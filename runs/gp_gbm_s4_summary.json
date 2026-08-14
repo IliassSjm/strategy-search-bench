@@ -1,0 +1,53 @@
+{
+  "run_id": "gp_gbm_s4",
+  "operator": "gp",
+  "world": "gbm",
+  "seed": 4,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 45,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 960.0,
+  "champion": {
+    "tree": {
+      "type": "vol_gate",
+      "children": [
+        {
+          "type": "const_long",
+          "children": []
+        },
+        {
+          "type": "vol_gate",
+          "children": [
+            {
+              "type": "const_long",
+              "children": []
+            },
+            {
+              "type": "vol_gate",
+              "children": [
+                {
+                  "type": "const_long",
+                  "children": []
+                },
+                {
+                  "type": "momentum",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "desc": "vol_gate(const_long, vol_gate(const_long, vol_gate(const_long, momentum)))",
+    "cv_fitness": 0.5894581417217799,
+    "refit_train_sharpe": 1.2712219250081238,
+    "holdout_sharpe": -0.30395551971254897,
+    "buyhold_holdout_sharpe": 0.7379923020295954
+  }
+}

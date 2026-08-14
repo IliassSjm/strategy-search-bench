@@ -1,0 +1,35 @@
+{
+  "run_id": "gp_ar1_s1",
+  "operator": "gp",
+  "world": "ar1",
+  "seed": 1,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 35,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 504.0,
+  "champion": {
+    "tree": {
+      "type": "vol_gate",
+      "children": [
+        {
+          "type": "trend",
+          "children": []
+        },
+        {
+          "type": "breakout",
+          "children": []
+        }
+      ]
+    },
+    "desc": "vol_gate(trend, breakout)",
+    "cv_fitness": 1.0373415463160054,
+    "refit_train_sharpe": 1.5998371216994727,
+    "holdout_sharpe": 1.3358279988932686,
+    "buyhold_holdout_sharpe": -0.6655205219531475
+  }
+}

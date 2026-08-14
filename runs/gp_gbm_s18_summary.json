@@ -1,0 +1,62 @@
+{
+  "run_id": "gp_gbm_s18",
+  "operator": "gp",
+  "world": "gbm",
+  "seed": 18,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 24,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 834.9,
+  "champion": {
+    "tree": {
+      "type": "switch_z",
+      "children": [
+        {
+          "type": "switch_z",
+          "children": [
+            {
+              "type": "breakout",
+              "children": []
+            },
+            {
+              "type": "switch_z",
+              "children": [
+                {
+                  "type": "breakout",
+                  "children": []
+                },
+                {
+                  "type": "breakout",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "switch_z",
+          "children": [
+            {
+              "type": "breakout",
+              "children": []
+            },
+            {
+              "type": "breakout",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "desc": "switch_z(switch_z(breakout, switch_z(breakout, breakout)), switch_z(breakout, breakout))",
+    "cv_fitness": 0.4989589496490241,
+    "refit_train_sharpe": 1.072265734791535,
+    "holdout_sharpe": 1.0604136800129476,
+    "buyhold_holdout_sharpe": -0.522717007212285
+  }
+}

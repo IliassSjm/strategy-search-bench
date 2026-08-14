@@ -1,0 +1,26 @@
+{
+  "run_id": "random_gbm_s14",
+  "operator": "random",
+  "world": "gbm",
+  "seed": 14,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 21,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 820.4,
+  "champion": {
+    "tree": {
+      "type": "momentum",
+      "children": []
+    },
+    "desc": "momentum",
+    "cv_fitness": 0.6562869116885746,
+    "refit_train_sharpe": 0.763038638454464,
+    "holdout_sharpe": -0.2835364857801958,
+    "buyhold_holdout_sharpe": 0.41159722382702063
+  }
+}

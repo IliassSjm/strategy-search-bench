@@ -1,0 +1,53 @@
+{
+  "run_id": "llm_gbm_s16",
+  "operator": "llm",
+  "world": "gbm",
+  "seed": 16,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 1,
+  "n_duplicate": 21,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 1517.4,
+  "champion": {
+    "tree": {
+      "type": "wsum",
+      "children": [
+        {
+          "type": "vol_gate",
+          "children": [
+            {
+              "type": "const_long",
+              "children": []
+            },
+            {
+              "type": "trend",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "switch_z",
+          "children": [
+            {
+              "type": "momentum",
+              "children": []
+            },
+            {
+              "type": "meanrev_z",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "desc": "wsum(vol_gate(const_long, trend), switch_z(momentum, meanrev_z))",
+    "cv_fitness": 0.6060729751196603,
+    "refit_train_sharpe": 1.2811118100186498,
+    "holdout_sharpe": 0.43876264264109266,
+    "buyhold_holdout_sharpe": 0.43615571472860376
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "run_id": "random_ar1_s18",
+  "operator": "random",
+  "world": "ar1",
+  "seed": 18,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 11,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 999.6,
+  "champion": {
+    "tree": {
+      "type": "wsum",
+      "children": [
+        {
+          "type": "meanrev_z",
+          "children": []
+        },
+        {
+          "type": "const_long",
+          "children": []
+        }
+      ]
+    },
+    "desc": "wsum(meanrev_z, const_long)",
+    "cv_fitness": 1.0660337792501948,
+    "refit_train_sharpe": 1.294914263639306,
+    "holdout_sharpe": 2.6081595175903556,
+    "buyhold_holdout_sharpe": -0.5733375041060104
+  }
+}

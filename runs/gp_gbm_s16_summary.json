@@ -1,0 +1,53 @@
+{
+  "run_id": "gp_gbm_s16",
+  "operator": "gp",
+  "world": "gbm",
+  "seed": 16,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 20,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 996.0,
+  "champion": {
+    "tree": {
+      "type": "wsum",
+      "children": [
+        {
+          "type": "switch_z",
+          "children": [
+            {
+              "type": "momentum",
+              "children": []
+            },
+            {
+              "type": "meanrev_z",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "vol_gate",
+          "children": [
+            {
+              "type": "trend",
+              "children": []
+            },
+            {
+              "type": "trend",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "desc": "wsum(switch_z(momentum, meanrev_z), vol_gate(trend, trend))",
+    "cv_fitness": 0.6363444913740741,
+    "refit_train_sharpe": 1.333632226900895,
+    "holdout_sharpe": 0.8000525232553826,
+    "buyhold_holdout_sharpe": 0.43615571472860376
+  }
+}

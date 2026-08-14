@@ -1,0 +1,26 @@
+{
+  "run_id": "llm_gbm_s18",
+  "operator": "llm",
+  "world": "gbm",
+  "seed": 18,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 5,
+  "n_duplicate": 20,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 1890.9,
+  "champion": {
+    "tree": {
+      "type": "const_long",
+      "children": []
+    },
+    "desc": "const_long",
+    "cv_fitness": 0.2065156636449791,
+    "refit_train_sharpe": -0.07662807389083609,
+    "holdout_sharpe": -0.522717007212285,
+    "buyhold_holdout_sharpe": -0.522717007212285
+  }
+}

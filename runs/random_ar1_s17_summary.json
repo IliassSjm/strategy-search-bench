@@ -1,0 +1,35 @@
+{
+  "run_id": "random_ar1_s17",
+  "operator": "random",
+  "world": "ar1",
+  "seed": 17,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 0,
+  "n_duplicate": 7,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 814.6,
+  "champion": {
+    "tree": {
+      "type": "vol_gate",
+      "children": [
+        {
+          "type": "breakout",
+          "children": []
+        },
+        {
+          "type": "breakout",
+          "children": []
+        }
+      ]
+    },
+    "desc": "vol_gate(breakout, breakout)",
+    "cv_fitness": 1.3142181824835188,
+    "refit_train_sharpe": 1.6220262498479128,
+    "holdout_sharpe": 0.1541603748491238,
+    "buyhold_holdout_sharpe": -1.1291454505338645
+  }
+}

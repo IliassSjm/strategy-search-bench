@@ -1,0 +1,33 @@
+{
+  "run_id": "llm_ar1_s6",
+  "operator": "llm",
+  "world": "ar1",
+  "seed": 6,
+  "budget": 60,
+  "n_scored": 60,
+  "n_rejected": 1,
+  "n_duplicate": 31,
+  "n_splits": 24,
+  "de_iter": 6,
+  "de_pop": 8,
+  "cost_bps": 5.0,
+  "elapsed_sec": 2222.0,
+  "champion": {
+    "tree": {
+      "type": "wsum",
+      "children": [
+        {
+          "type": "meanrev_z"
+        },
+        {
+          "type": "rsi_gate"
+        }
+      ]
+    },
+    "desc": "wsum(meanrev_z, rsi_gate)",
+    "cv_fitness": 0.5751029340915594,
+    "refit_train_sharpe": 1.2765874663937096,
+    "holdout_sharpe": -0.893815416166737,
+    "buyhold_holdout_sharpe": -0.5550830299366566
+  }
+}
